@@ -1,8 +1,7 @@
-const siteUrl = "https://washingtongui.github.io/convite_aurora_yasmin/";
-// Link completo da imagem para gerar a miniatura no WhatsApp
+// Link direto da imagem no GitHub Pages (garante a miniatura no WhatsApp)
 const imageUrl = "https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png";
 
-// Emojis em código Unicode seguro para evitar erros de codificação ()
+// Emojis em código Unicode seguro para evitar erros de codificação
 const eEstrela = "\u{1F31F}";
 const eLaco = "\u{1F380}";
 const eBrilho = "\u{2728}";
@@ -18,16 +17,29 @@ const modal = document.getElementById("modal");
 document.getElementById("open").addEventListener("click", () => modal.showModal());
 
 document.getElementById("copy").addEventListener("click", () => {
-  const nome = document.getElementById("nome").value.trim();
+  const nomeInput = document.getElementById("nome");
+  const nome = nomeInput.value.trim();
   const qtd = document.getElementById("qtd").value;
   const fb = document.getElementById("feedback");
 
+  // Regex para permitir apenas letras (incluindo acentos) e espaços
+  const apenasLetrasRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+
+  // 1. Validação de campo vazio
   if (!nome) {
-    document.getElementById("nome").focus();
+    nomeInput.focus();
     fb.textContent = "Por favor, informe seu nome.";
     return;
   }
 
+  // 2. Validação contra números e caracteres especiais
+  if (!apenasLetrasRegex.test(nome)) {
+    nomeInput.focus();
+    fb.textContent = "O nome deve conter apenas letras (sem números ou caracteres especiais).";
+    return;
+  }
+
+  // Montagem da mensagem
   const mensagem = 
     `${eEstrela} *Confirmação de Presença* ${eEstrela}\n\n` +
     `Olá! Confirmo minha presença no aniversário da Aurora e da Yasmin! ${eLaco}${eBrilho}\n\n` +
@@ -44,6 +56,7 @@ document.getElementById("copy").addEventListener("click", () => {
   fb.textContent = "O WhatsApp foi aberto com sua mensagem de confirmação!";
 });
 
+// Animação da carta/envelope
 const scene = document.getElementById("scene");
 const envelope = document.getElementById("open-letter");
 const letter = document.getElementById("letter");
