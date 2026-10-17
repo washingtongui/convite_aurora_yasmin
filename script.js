@@ -1,4 +1,4 @@
-const imageUrl = "https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png";
+const siteUrl = "https://washingtongui.github.io/convite_aurora_yasmin/";
 
 // Emojis em código Unicode seguro para evitar erros de codificação ()
 const eEstrela = "\u{1F31F}";
@@ -34,7 +34,7 @@ document.getElementById("copy").addEventListener("click", () => {
     `${eData} *Data:* Domingo, 15 de Novembro\n` +
     `${eHorario} *Horário:* 19:00h\n` +
     `${eCidade} *Local:* Espaço More (201 Norte, Palmas - TO) ${eVarinha}\n\n` +
-    `${imageUrl}`;
+    `${siteUrl}`;
 
   const urlWhatsapp = `https://wa.me/5563991283569?text=${encodeURIComponent(mensagem)}`;
   window.open(urlWhatsapp, '_blank');

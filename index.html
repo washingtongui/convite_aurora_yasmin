@@ -1,8 +1,88 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aurora & Yasmin — Jardim Encantado</title><meta property="og:title" content="Confirmação de Presença — Aurora &amp; Yasmin 🎉"><meta property="og:description" content="Aniversário de 1 ano da Aurora e 2 anos da Yasmin. Clique para confirmar sua presença!"><meta property="og:image" content="https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png"><meta property="og:image:width" content="1264"><meta property="og:image:height" content="1264"><meta property="og:type" content="website"><meta property="og:url" content="https://washingtongui.github.io/convite_aurora_yasmin/"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div class="floaters" aria-hidden="true">🦋　✦　🦋　✧　🦋</div><main class="scene" id="scene">
-  <button class="envelope" id="open-letter" type="button" aria-label="Abrir convite" aria-expanded="false" aria-controls="letter">
-    <img class="envelope__image" src="assets/Carta.png" alt="" draggable="false">
-    <span class="envelope__hint">Toque para abrir</span>
-  </button>
-  <article class="card" id="letter" aria-hidden="true">
-    <div class="ornament">✦　❀　✦</div><p class="eyebrow">UM CONVITE PARA UM DIA MÁGICO</p><h1>Aurora <span>&</span> Yasmin</h1><p class="subtitle">No jardim do Senhor nascem<br>as mais lindas flores.</p><div class="divider">❦</div><p class="prayer">Por esta união — e por cada filha —<br>o Senhor ouviu minha oração.</p><section class="ages"><p class="eyebrow">NOSSAS BORBOLETINHAS VÃO COMPLETAR</p><div class="age-row"><div><b>1</b><small>aninho</small><strong>AURORA</strong></div><span class="heart">♡</span><div><b>2</b><small>aninhos</small><strong>YASMIN</strong></div></div></section><p class="invite">Você é nosso convidado especial</p><section class="details"><div><label>✧ QUANDO</label><strong>Domingo, 15 de novembro</strong><small>Às 19h</small></div><div><label>✧ ONDE</label><strong>Espaço More</strong><small>201 Norte</small></div></section><section class="gift"><h2>Com carinho, uma sugestão</h2><p>Roupas (tamanhos 2 e 3 anos), calçados (tamanhos 20 e 23) ou brinquedos.</p></section><p class="closing">Sua presença tornará este dia<br>ainda mais especial.</p><p class="please">Por favor, confirme sua presença.</p><button id="open">Confirmar presença ♡</button><p class="ending">Espero por você!</p><div class="ornament">❀ ✦ ❀</div></article>
-</main><dialog id="modal"><form method="dialog"><button class="x" aria-label="Fechar">×</button><p class="eyebrow">VAMOS CELEBRAR JUNTOS?</p><h2>Confirme sua presença</h2><label for="nome">Seu nome</label><input id="nome" required placeholder="Como podemos te chamar?"><label for="qtd">Quantas pessoas irão?</label><select id="qtd"><option>1 pessoa</option><option>2 pessoas</option><option>3 pessoas</option><option>4 pessoas</option><option>5 ou mais pessoas</option></select><button type="button" id="copy">Enviar minha confirmação</button><p id="feedback" aria-live="polite"></p><small>Enviar confirmação via WhatsApp para a família das aniversariantes ✨</small></form></dialog><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Você está convidado para celebrar os aniversários da Aurora e da Yasmin! Um dia mágico, cheio de amor e encanto.">
+      <meta name="theme-color" content="#202522">
+
+      <title>Aurora &amp; Yasmin — Jardim Encantado</title>
+
+      <meta property="og:title" content="Confirmação de Presença — Aurora &amp; Yasmin 🎉">
+      <meta property="og:description" content="Aniversário de 1 ano da Aurora e 2 anos da Yasmin. Clique para confirmar sua presença!">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://washingtongui.github.io/convite_aurora_yasmin/">
+      <meta property="og:image" content="https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png">
+      <meta property="og:image:secure_url" content="https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png">
+      <meta property="og:image:width" content="1264">
+      <meta property="og:image:height" content="1264">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=DM+Sans:wght@400;600&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="floaters" aria-hidden="true">🦋　✦　🦋　✧　🦋</div>
+      <main class="scene" id="scene">
+            <button class="envelope" id="open-letter" type="button" aria-label="Abrir convite" aria-expanded="false" aria-controls="letter">
+                  <img class="envelope__image" src="assets/Carta.png" alt="" draggable="false">
+                  <span class="envelope__hint">Toque para abrir</span>
+            </button>
+
+            <article class="card" id="letter" aria-hidden="true">
+                  <div class="ornament">✦　❀　✦</div>
+                  <p class="eyebrow">UM CONVITE PARA UM DIA MÁGICO</p>
+                  <h1>Aurora <span>&amp;</span> Yasmin</h1>
+                  <p class="subtitle">No jardim do Senhor nascem<br>as mais lindas flores.</p>
+                  <div class="divider">❦</div>
+                  <p class="prayer">Por esta união — e por cada filha —<br>o Senhor ouviu minha oração.</p>
+
+                  <section class="ages">
+                        <p class="eyebrow">NOSSAS BORBOLETINHAS VÃO COMPLETAR</p>
+                        <div class="age-row">
+                              <div><b>1</b><small>aninho</small><strong>AURORA</strong></div>
+                              <span class="heart">♡</span>
+                              <div><b>2</b><small>aninhos</small><strong>YASMIN</strong></div>
+                        </div>
+                  </section>
+
+                  <p class="invite">Você é nosso convidado especial</p>
+                  <section class="details">
+                        <div><label>✧ QUANDO</label><strong>Domingo, 15 de novembro</strong><small>Às 19h</small></div>
+                        <div><label>✧ ONDE</label><strong>Espaço More</strong><small>201 Norte</small></div>
+                  </section>
+                  <section class="gift">
+                        <h2>Com carinho, uma sugestão</h2>
+                        <p>Roupas (tamanhos 2 e 3 anos), calçados (tamanhos 20 e 23) ou brinquedos.</p>
+                  </section>
+                  <p class="closing">Sua presença tornará este dia<br>ainda mais especial.</p>
+                  <p class="please">Por favor, confirme sua presença.</p>
+                  <button id="open">Confirmar presença ♡</button>
+                  <p class="ending">Espero por você!</p>
+                  <div class="ornament">❀ ✦ ❀</div>
+            </article>
+      </main>
+
+      <dialog id="modal">
+            <form method="dialog">
+                  <button class="x" aria-label="Fechar">×</button>
+                  <p class="eyebrow">VAMOS CELEBRAR JUNTOS?</p>
+                  <h2>Confirme sua presença</h2>
+                  <label for="nome">Seu nome</label>
+                  <input id="nome" required placeholder="Como podemos te chamar?">
+                  <label for="qtd">Quantas pessoas irão?</label>
+                  <select id="qtd">
+                        <option>1 pessoa</option>
+                        <option>2 pessoas</option>
+                        <option>3 pessoas</option>
+                        <option>4 pessoas</option>
+                        <option>5 ou mais pessoas</option>
+                  </select>
+                  <button type="button" id="copy">Enviar minha confirmação</button>
+                  <p id="feedback" aria-live="polite"></p>
+                  <small>Enviar confirmação via WhatsApp para a família das aniversariantes ✨</small>
+            </form>
+      </dialog>
+      <script src="script.js"></script>
+</body>
+</html>
