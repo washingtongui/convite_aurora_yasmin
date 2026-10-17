@@ -1,8 +1,0 @@
-CONVITE DIGITAL — AURORA & YASMIN
-
-1. Extraia o ZIP e abra a pasta no VS Code.
-2. Abra index.html no navegador (ou use a extensão Live Server).
-
-Arquivos: index.html, style.css, script.js e assets/floresta-encantada.png.
-O convite está configurado para domingo, 15 de novembro, às 19h, no Espaço More, 201 Norte.
-O botão de confirmação prepara uma mensagem para copiar. Para envio automático por WhatsApp, será necessário informar o número da família.
