@@ -1,4 +1,6 @@
 const siteUrl = "https://washingtongui.github.io/convite_aurora_yasmin/";
+// Link completo da imagem para gerar a miniatura no WhatsApp
+const imageUrl = "https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png";
 
 // Emojis em código Unicode seguro para evitar erros de codificação ()
 const eEstrela = "\u{1F31F}";
@@ -34,19 +36,12 @@ document.getElementById("copy").addEventListener("click", () => {
     `${eData} *Data:* Domingo, 15 de Novembro\n` +
     `${eHorario} *Horário:* 19:00h\n` +
     `${eCidade} *Local:* Espaço More (201 Norte, Palmas - TO) ${eVarinha}\n\n` +
-    `${siteUrl}`;
+    `${imageUrl}`;
 
-  const urlWhatsapp = `https://wa.me/5563991283569?text=${encodeURIComponent(mensagem)}`;
+  const urlWhatsapp = `https://wa.me/5563992171502?text=${encodeURIComponent(mensagem)}`;
   window.open(urlWhatsapp, '_blank');
 
-  fb.replaceChildren(document.createTextNode("O WhatsApp foi aberto com sua mensagem. Baixe a imagem e anexe-a à conversa: "));
-  
-  const imageLink = document.createElement("a");
-  imageLink.href = "assets/confirmacao%20(2).png";
-  imageLink.download = "confirmacao (2).png";
-  imageLink.textContent = "baixar imagem de confirmação";
-  imageLink.style.color = "var(--gold)";
-  fb.append(imageLink);
+  fb.textContent = "O WhatsApp foi aberto com sua mensagem de confirmação!";
 });
 
 const scene = document.getElementById("scene");
