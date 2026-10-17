@@ -1,4 +1,4 @@
-const imageUrl = "https://washingtongui.github.io/convite_aurora_yasmin/assets/Confirmacao.png";
+const imageUrl = "https://washingtongui.github.io/convite_aurora_yasmin/assets/confirmacao%20(2).png";
 
 // Emojis em código Unicode seguro para evitar erros de codificação ()
 const eEstrela = "\u{1F31F}";
