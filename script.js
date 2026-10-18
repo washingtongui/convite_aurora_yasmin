@@ -47,7 +47,7 @@ document.getElementById("copy").addEventListener("click", () => {
     `${eQuantidade} *Quantidade:* ${qtd}\n` +
     `${eData} *Data:* Domingo, 15 de Novembro\n` +
     `${eHorario} *Horário:* 19:00h\n` +
-    `${eCidade} *Local:* Espaço More (201 Norte, Palmas - TO) ${eVarinha}\n\n` +
+    `${eCidade} *Local:* Espaço Nave (212 Norte, Palmas - TO) ${eVarinha}\n\n` +
     `${imageUrl}`;
 
   const urlWhatsapp = `https://wa.me/5563992171502?text=${encodeURIComponent(mensagem)}`;
